@@ -1,0 +1,308 @@
+@font-face {
+  font-family: "sygma";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./Sygma.woff) format("woff2");
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #fcfff8;
+  overflow-x: hidden;
+}
+
+ul, li, input, button, select {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  margin-left: 60px;
+}
+.header .left_menu {
+  display: flex;
+  gap: 36px;
+}
+.header .right_menu {
+  display: flex;
+  gap: 42px;
+  margin-right: 120px;
+}
+
+.logo {
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+}
+
+.line {
+  position: absolute;
+  top: 110px;
+  width: 100%;
+  border-top: 1px solid #bdbebb;
+}
+
+.content1 .img1 img {
+  position: absolute;
+  top: 593px;
+  left: 0px;
+}
+.content1 .img2 img {
+  position: absolute;
+  top: 290px;
+  left: 440px;
+}
+.content1 .slide {
+  position: relative;
+  top: 210px;
+  left: 950px;
+}
+.content1 .slide img {
+  position: absolute;
+  top: 100px;
+  opacity: 1;
+  animation: slideAnimation 9s infinite;
+}
+.content1 .slide img:nth-child(1) {
+  animation-delay: 0s;
+}
+.content1 .slide img:nth-child(2) {
+  animation-delay: 3s;
+}
+.content1 .slide img:nth-child(3) {
+  animation-delay: 6s;
+}
+.content1 .info {
+  position: absolute;
+  top: 384px;
+  left: 94px;
+  font-size: 16px;
+  font-weight: 100;
+}
+.content1 .title1 {
+  position: absolute;
+  top: 985px;
+  left: 420px;
+  font-family: "sygma";
+  font-size: 25px;
+}
+.content1 .text1 {
+  position: absolute;
+  top: 1037px;
+  left: 420px;
+  font-size: 16px;
+  font-weight: 100;
+}
+.content1 .right_title {
+  font-family: "sygma";
+  font-size: 97px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  position: absolute;
+  top: 830px;
+  right: -380px;
+  letter-spacing: 5px;
+}
+.content1 .cir {
+  position: absolute;
+  top: 790px;
+  left: 748px;
+  animation: circle 10s linear infinite;
+}
+
+.content2 {
+  margin-top: 1600px;
+}
+.content2 .big_title {
+  display: flex;
+  justify-content: center;
+}
+
+.content3 {
+  margin-top: 400px;
+  position: relative;
+}
+.content3 img {
+  position: absolute;
+  left: 0px;
+}
+.content3 .right_title2 {
+  position: absolute;
+  top: 60px;
+  left: 1050px;
+  font-family: "sygma";
+  font-size: 95px;
+}
+.content3 .text2 {
+  position: absolute;
+  top: 200px;
+  left: 1050px;
+  font-size: 16px;
+  font-weight: 100;
+}
+.content3 .line2 {
+  position: absolute;
+  top: 370px;
+  left: 1050px;
+  border-left: thin solid #bdbebb;
+  height: 150px;
+}
+.content3 .text3 {
+  position: absolute;
+  top: 580px;
+  left: 1050px;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.content4 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.content4 .ring {
+  position: absolute;
+  top: 950px;
+}
+.content4 .big_title2 {
+  position: absolute;
+  top: 1250px;
+  font-family: "sygma";
+  font-size: 90px;
+}
+.content4 .text4 {
+  position: absolute;
+  top: 1150px;
+  font-family: "sygma";
+  font-size: 40px;
+}
+
+.content5 {
+  margin-top: 1600px;
+  position: relative;
+}
+.content5 .img5 {
+  position: absolute;
+  top: 200px;
+  left: 60px;
+}
+.content5 .img6 {
+  position: absolute;
+  top: 0px;
+  left: 900px;
+}
+.content5 .img7 {
+  position: absolute;
+  top: 380px;
+  left: 1222px;
+}
+.content5 .spe {
+  font-family: "sygma";
+  font-size: 97px;
+  position: absolute;
+  top: 500px;
+  left: 650px;
+}
+.content5 .title2 {
+  position: absolute;
+  top: 620px;
+  left: 650px;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.content6 .img8 img {
+  position: absolute;
+  top: 5200px;
+  left: 60px;
+}
+.content6 .img8_hover img {
+  position: absolute;
+  top: 5200px;
+  left: 60px;
+  z-index: -1;
+}
+
+.img8 {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.img8:hover {
+  opacity: 1;
+}
+
+.img9 {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.img9:hover {
+  opacity: 1;
+}
+
+.line3 {
+  position: absolute;
+  top: 6150px;
+  width: 100%;
+  border-top: 1px solid #bdbebb;
+}
+
+.copy {
+  position: absolute;
+  top: 6240px;
+  left: 180px;
+  font-family: "sygma";
+  letter-spacing: 3px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3840px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 100px;
+}
+.footer .right_menu {
+  display: flex;
+  gap: 42px;
+}
+
+@keyframes circle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes slideAnimation {
+  0% {
+    opacity: 0;
+  }
+  33.33% {
+    opacity: 1;
+  }
+  66.66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes motion {
+  0% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=styles.css.map */
